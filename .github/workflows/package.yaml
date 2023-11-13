@@ -13,6 +13,9 @@ env:
 jobs:
   docker:
     if: ${{ github.repository != 'starter-kits-usmb/back-nestjs' }}
+    permissions:
+      contents: read
+      packages: write
     runs-on: ubuntu-latest
     steps:
       # "download" the code
